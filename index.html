@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/gitlogo.png">
+
+    <title>GIT</title>
+
+</head>
+
+
+<body>
+
+    <header>
+      <div class="container">
+        <div class="title">
+        Présentation de GIT
+       </div>
+    </header>   
+
+    
+    
+      <section class="content">
+          <div class="card">
+            <h2>Dépôt local vs dépôt distant</h2>
+              <ul>
+                <li>Un"dépôt local" est un entrepôt virtuel de votre projet. Il vous permet d'enregistrer les versions de votre code et d'y accéder au besoin.</li>
+                <li>Le"dépôt distant" est un peu différent. Il permet de stocker les différentes versions de votre code afin de garder un historique délocalisé,
+                  c'est-à-dire un historique hébergé sur Internet ou sur un réseau.
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+          <div class="card">
+            <h2>Qu'est ce qu'une branche sur GIT?</h2>
+              <ul>
+                <li>Créer une branche, c’est en quelque sorte comme créer une “copie” de votre projet pour développer et tester de nouvelles fonctionnalités sans impacter le projet de base.</li>
+                <li>La branche par défaut dans Git s’appelle main. Cette branche main va se déplacer automatiquement à chaque nouveau commit pour pointer sur le dernier commit effectué tant qu’on reste sur cette branche.</li>
+                <li>La branche main n’est pas une branche spéciale pour Git : elle est traitée de la même façon que les autres branches. L’idée est que lorsqu’on tape une commande git init, 
+                une branche est automatiquement créée et que le nom donné à cette branche par Git par défaut est “main”. On pourrait très bien la renommer ensuite mais ça ne présente généralement aucun intérêt.</li>
+                <p>En résumé, une branche est un pointeur vers un commit en particulier. Un commit est un objet qui contient un pointeur vers l’instantané du contenu indexé ainsi que des pointeurs vers le ou les commits le précédant directement.
+
+                Ainsi, créer une nouvelle branche dans Git crée simplement un nouveau pointeur plutôt que de recopier l’intégralité du répertoire de travail.</p>
+              </ul>
+            </div>
+          
+    
+          <div class="card">
+              <h2>A quoi correspond les actions clone, commit, add, push sur GIT</h2>
+              <ul>
+                <li><strong>CLONE : </strong>Git clone est un utilitaire de ligne de commande GIT utilisé pour cibler un dépôt existant et créer un clone ou une copie du dépôt cible.
+                  La commande git clone est la plus courante pour obtenir une copie de développement.</li>
+                <li><strong>COMMIT :</strong>La commande git commit capture un instantané des changements actuellement stagés du projet.
+                  Les instantanés comités peuvent être considérés comme des versions «sûres» d’un projet. Avant d’exécuter git commit,
+                   la commande git add est utilisée pour promouvoir ou 
+                  «stager» les changements apportés au projet qui seront stockés dans un commit. Ces deux commandes git commit et git add font partie des plus fréquemment utilisées.</li>
+                <li><strong>ADD :</strong> La commande git add ajoute un changement dans le répertoire de travail à la zone de staging.
+                  Elle informe git que vous voulez inclure les mises à jour dans un fichier particulier du commit suivant. 
+                  Cependant, git add n’impacte pas le dépôt de manière significative. Les changements ne sont pas réellement enregistrés jusqu'à ce que 
+                  vous exécutiez git commit</li>
+                <li><strong>PUSH :</strong>La commande git push est utilisée pour charger le contenu d'un dépôt local vers un dépôt distant. Le push vous permet 
+                  de transférer les commits de votre dépôt local vers un dépôt distant. C'est l'équivalent de git fetch, mais à l'inverse du fetch qui importe
+                   les commits dans des branches locales, le push les exporte vers des branches distantes. Ces dernières sont configurées à l'aide de la commande 
+                   git remote. Le push est susceptible d'écraser les changements. Vous devez donc prendre des précautions lorsque vous l'exécutez. 
+                   Ces problèmes sont abordés ci-dessous.
+                </li>
+              </ul>
+            </div>
+    
+          
+          
+      </section>
+    
+</body>
+</html>
